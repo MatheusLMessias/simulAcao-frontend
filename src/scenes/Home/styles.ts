@@ -3,7 +3,6 @@ import { makeStyles } from "@mui/styles";
 export const useStyles = makeStyles(() => ({
   container: {
     display: "flex",
-    flex: 1,
     flexDirection: "column",
     backgroundColor: "#000000",
     width: "100vw",
@@ -11,7 +10,12 @@ export const useStyles = makeStyles(() => ({
     margin: -8,
     padding: -8,
     alignItems: "center",
-    justifyContent: "center",
+  },
+  containerCarousel: {
+    display: "flex",
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
   },
   button: {
     width: 30,
