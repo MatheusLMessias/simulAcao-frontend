@@ -1,22 +1,24 @@
 import React from 'react';
-import './styles.css';
 import UseLoginScreen from './hooks/useLoginScreen';
+import { useStyles } from './styles';
+import { Box } from '@mui/material';
 
-interface LoginScreenProps {
-}
-
-const LoginScreen = ({}: LoginScreenProps) => {
+const LoginScreen = () => {
+  const styles = useStyles();
   const {
     name
   } = UseLoginScreen();
 
 
   return (
-    <div className="Container">
+
+      <Box className={styles.container}>
         <p>
           {name}
         </p>
-    </div>
+    </Box>
+
+
   );
 };
 
