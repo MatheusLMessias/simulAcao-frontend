@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, TextField } from '@mui/material';
-import { NOMEPROJETO, SUBTITULOPROJETO } from '../../utils/constants';
+import { NOMEPROJETO, SUBTITULOPROJETO } from '../../../../utils/constants';
 import { useStyles } from './style';
 
 const Title = () => {

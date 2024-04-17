@@ -3,14 +3,12 @@ import { makeStyles } from "@mui/styles";
 export const useStyles = makeStyles(() => ({
   container: {
     display: "flex",
-    flexDirection: "row",
-    backgroundColor: "#000000",
-    width: "100vw",
-    height: 60,
-    margin: -8,
-    padding: -8,
-    alignItems:"center",
-    justifyContent: "space-between"
+    //flexDirection: "row",
+    width: 550,
+    height: 150,
+    marginTop: 20,
+    alignItems: "center",
+    justifyContent: "space-around",
   },
   user: {
     marginRight: 10
