@@ -17,11 +17,11 @@ const Layout: React.FC = (): JSX.Element => {
 
   return (
     <StylesProvider generateClassName={generateClassName}>
-        <Box className={classes.base}>
-          <Container maxWidth="xl" className={classes.main} disableGutters>
-              <Outlet />
-          </Container>
-        </Box>
+      <Box className={classes.base}>
+        <Container maxWidth="xl" className={classes.main} disableGutters>
+          <Outlet />
+        </Container>
+      </Box>
     </StylesProvider>
   );
 };

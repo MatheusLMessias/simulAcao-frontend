@@ -4,7 +4,7 @@ export const useStyles = makeStyles(() => ({
   container: {
     display: "flex",
     flexDirection: "row",
-    alignItems:"center",
-    justifyContent: "space-between"
+    alignItems: "center",
+    justifyContent: "space-between",
   },
 }));

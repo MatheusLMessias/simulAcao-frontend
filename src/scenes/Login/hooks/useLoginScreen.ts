@@ -1,7 +1,7 @@
-import {useEffect, useState} from 'react';
+import { useEffect, useState } from "react";
 
 const UseLoginScreen = () => {
-   const [name, setName] = useState<String>('Teste Matheus');
+  const [name, setName] = useState<String>("Teste Matheus");
 
   return {
     name,

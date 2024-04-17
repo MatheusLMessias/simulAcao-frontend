@@ -9,13 +9,13 @@ export const useStyles = makeStyles(() => ({
     height: 60,
     margin: -8,
     padding: -8,
-    alignItems:"center",
-    justifyContent: "space-between"
+    alignItems: "center",
+    justifyContent: "space-between",
   },
   user: {
-    marginRight: 10
+    marginRight: 10,
   },
   home: {
-    marginLeft: 10
-  }
+    marginLeft: 10,
+  },
 }));

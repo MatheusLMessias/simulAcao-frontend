@@ -10,11 +10,11 @@ export const useStyles = makeStyles(() => ({
     height: "100vh",
     margin: -8,
     padding: -8,
-    alignItems:"center",
-    justifyContent:"center"
+    alignItems: "center",
+    justifyContent: "center",
   },
   button: {
     width: 30,
     height: 400,
-  }
+  },
 }));

@@ -54,3 +54,41 @@ export const AcoesEmAlta = [
             variation: "+0.27%"
         },
     ]
+
+    export const Noticias = [
+        {
+            id: 0,
+            name: "BTG Pactual (BPCA11) compra gestora de private equity",
+            value: "E-Investidor",
+        },
+        {
+            id: 1,
+            name: "BTG Pactual (BPCA11) compra gestora de private equity",
+            value: "E-Investidor",
+        },
+        {
+            id: 2,
+            name: "BTG Pactual (BPCA11) compra gestora de private equity",
+            value: "E-Investidor",
+        },
+        {
+            id: 3,
+            name: "BTG Pactual (BPCA11) compra gestora de private equity",
+            value: "E-Investidor",
+        },
+        {
+            id: 4,
+            name: "BTG Pactual (BPCA11) compra gestora de private equity",
+            value: "E-Investidor",
+        },
+        {
+            id: 5,
+            name: "BTG Pactual (BPCA11) compra gestora de private equity",
+            value: "E-Investidor",
+        },
+        {
+            id: 6,
+            name: "BTG Pactual (BPCA11) compra gestora de private equity",
+            value: "E-Investidor",
+        },
+    ]
