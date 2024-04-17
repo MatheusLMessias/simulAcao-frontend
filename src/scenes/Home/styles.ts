@@ -3,7 +3,6 @@ import { makeStyles } from "@mui/styles";
 export const useStyles = makeStyles(() => ({
   container: {
     display: "flex",
-    flex: 1,
     flexDirection: "column",
     backgroundColor: "#000000",
     width: "100vw",
