@@ -1,10 +1,6 @@
 import { makeStyles } from "@mui/styles";
 
 export const useStyles = makeStyles(() => ({
-  body: {
-    margin: 0,
-    padding: 0
-  },
   container: {
     display: "flex",
     flex: 1,
@@ -13,26 +9,12 @@ export const useStyles = makeStyles(() => ({
     width: "100vw",
     height: "100vh",
     margin: -8,
-    padding: -8
+    padding: -8,
+    alignItems:"center",
+    justifyContent:"center"
   },
-  containerTextBanner: {
-    display: "flex",
-    flexDirection: "column",
-    width: 500,
-    height: 735,
-    marginLeft: 50,
-    marginTop: "3rem",
-  },
-  containerText: {
-    backgroundColor: "#FFFFFF",
-    display: "flex",
-    overflow: "hidden",
-    alignItems: "center",
-    flexDirection: "column",
-  },
-  list: {
-    marginTop: "3rem",
-    marginBottom: "3rem",
-    maxWidth: 950,
-  },
+  button: {
+    width: 30,
+    height: 400,
+  }
 }));
