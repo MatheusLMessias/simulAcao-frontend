@@ -12,7 +12,7 @@ const ScenesHeader: React.FC = () => {
       </Button>
       <Button
         sx={{ color: "white" }}
-        href="/Carteira"
+        href="/Wallet"
         size="large"
         color="primary"
       >
@@ -20,7 +20,7 @@ const ScenesHeader: React.FC = () => {
       </Button>
       <Button
         sx={{ color: "white" }}
-        href="/Mercado"
+        href="/Market"
         size="large"
         color="primary"
       >

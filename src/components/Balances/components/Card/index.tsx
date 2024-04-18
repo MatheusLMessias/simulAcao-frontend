@@ -21,7 +21,7 @@ const BalanceCard: React.FC<BalanceCardProps> = ({ label }) => {
       }}
     >
       <CardContent>
-        <CardActionArea href="/Carteira">
+        <CardActionArea href="/Wallet">
           <Typography variant="body1" color="white" sx={{ marginTop: 1 }}>
             {label.title}
           </Typography>
