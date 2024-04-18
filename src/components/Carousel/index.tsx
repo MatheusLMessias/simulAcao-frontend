@@ -8,6 +8,7 @@ type CarouselComponent = {
   title: String;
   cardContent: any;
 };
+
 const CarouselComponent: React.FC<CarouselComponent> = ({
   title,
   cardContent,

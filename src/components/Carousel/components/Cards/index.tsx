@@ -20,7 +20,7 @@ const Cards = ({ item }: any): JSX.Element => {
       }}
     >
       <CardContent>
-        <CardActionArea href="/Mercado">
+        <CardActionArea href="/Market">
           <Typography variant="body1" color="white" sx={{ marginTop: 1 }}>
             {item.name}
           </Typography>

@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 const UseLoginScreen = () => {
   const [name, setName] = useState<String>("Teste Matheus");
