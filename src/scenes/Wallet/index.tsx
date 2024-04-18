@@ -2,12 +2,12 @@ import React from "react";
 import { useStyles } from "./styles";
 import { Box } from "@mui/material";
 import Header from "../../components/Header";
-import CheckboxList from "./components/List";
-import { Lista } from "../../resources/mocks/Market.Mock";
-import TitleList from "./components/TitleList";
 import Balances from "../../components/Balances";
+import TitleList from "./components/TitleList";
+import { ListaWallet } from "../../resources/mocks/Wallet.Mock";
+import ListWallet from "./components/ListWallet";
 
-const MarketScreen: React.FC = () => {
+const WalletScreen: React.FC = () => {
   const styles = useStyles();
 
   return (
@@ -16,15 +16,15 @@ const MarketScreen: React.FC = () => {
       <Box className={styles.container}>
         <Balances />
         <Box className={styles.title}>
-          <p>Mercado - B3</p>
+          <p>Minha carteira</p>
         </Box>
         <TitleList />
-        {Lista.map((item: { id: any }) => (
-          <CheckboxList key={item.id} item={item} />
+        {ListaWallet.map((item: { id: any }) => (
+          <ListWallet key={item.id} item={item} />
         ))}
       </Box>
     </>
   );
 };
 
-export default MarketScreen;
+export default WalletScreen;

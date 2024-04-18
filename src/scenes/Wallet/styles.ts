@@ -12,6 +12,8 @@ export const useStyles = makeStyles(() => ({
     alignItems: "center",
   },
   title: {
+    display: "flex",
+    justifyContent: "flex-start",
     color: "white",
     fontSize: 40,
   },
