@@ -12,22 +12,22 @@ const TitleList = () => {
           primary="Nome"
         />
         <ListItemText
-          sx={{ color: "white", marginTop: 2, height: 20, width: 50 }}
+          sx={{ color: "white", marginTop: 2, height: 20, width: 50, marginLeft: 3.3}}
           primary="Preço"
         />
         <ListItemText
-          sx={{ color: "white", marginTop: 2, height: 20, width: 50 }}
-          primary="Variância"
+          sx={{ color: "white", marginTop: 2, height: 20, width: 50, marginRight: 7 }}
+          primary="Quantidade"
         />
         <ListItemText
           sx={{
             color: "white",
             marginTop: 2,
             height: 20,
-            width: 30,
-            marginRight: 7,
+            width: 50,
+            marginRight: 8,
           }}
-          primary="Volume"
+          primary="Valor total"
         />
       </ListItem>
     </List>

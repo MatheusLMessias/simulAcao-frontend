@@ -5,10 +5,10 @@ import {
   ListItemSecondaryAction,
   ListItemText,
 } from "@mui/material";
-import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
 import { useStyles } from "./style";
 
-const CheckboxList = ({ item }: any) => {
+const ListWallet = ({ item }: any) => {
   const styles = useStyles();
   return (
     <List className={styles.container}>
@@ -26,25 +26,25 @@ const CheckboxList = ({ item }: any) => {
         <ListItemText
           id={item.id}
           sx={{ color: "white", marginTop: 2, height: 20, width: 60 }}
-          primary={`${item.variancia}`}
+          primary={`${item.quantidade}`}
         />
         <ListItemText
           id={item.id}
           sx={{ color: "white", marginTop: 2, height: 20, width: 60 }}
-          primary={`${item.volume}`}
+          primary={`${item.valorTotal}`}
         />
         <ListItemSecondaryAction>
           <IconButton
             onClick={() =>
               alert(
-                `Compra da ação ${item.nome} do valor de ${item.preco} efetuada com sucesso `
+                `Venda de ${item.quantidade} ações da ${item.nome} no valor total de ${item.valorTotal} efetuada com sucesso `
               )
             }
-            sx={{ color: "white", marginTop: 2 }}
+            sx={{ color: "white", marginTop: 1.1 }}
             edge="end"
             aria-label="comments"
           >
-            <ShoppingCartIcon />
+            <AttachMoneyIcon />
           </IconButton>
         </ListItemSecondaryAction>
       </ListItem>
@@ -52,4 +52,4 @@ const CheckboxList = ({ item }: any) => {
   );
 };
 
-export default CheckboxList;
+export default ListWallet;
