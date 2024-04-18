@@ -25,9 +25,19 @@ const BalanceCard: React.FC<BalanceCardProps> = ({ label }) => {
           <Typography variant="body1" color="white" sx={{ marginTop: 1 }}>
             {label.title}
           </Typography>
-          <Typography variant="h5" color="white" sx={{ marginTop: 2 }}>
-            {label.content}
-          </Typography>
+          {label.content > 0 ? (
+            <>
+              <Typography variant="h5" color="green" sx={{ marginTop: 2 }}>
+                {`R$ ${label.content}`}
+              </Typography>
+            </>
+          ) : (
+            <>
+              <Typography variant="h5" color="red" sx={{ marginTop: 2 }}>
+                {`R$ ${label.content}`}
+              </Typography>
+            </>
+          )}
         </CardActionArea>
       </CardContent>
     </Card>
