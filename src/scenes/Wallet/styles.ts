@@ -12,9 +12,9 @@ export const useStyles = makeStyles(() => ({
     alignItems: "center",
   },
   title: {
-    display: "flex",
-    justifyContent: "flex-start",
+    marginRight: 720,
     color: "white",
     fontSize: 40,
+    fontWeight: "bolder"
   },
 }));

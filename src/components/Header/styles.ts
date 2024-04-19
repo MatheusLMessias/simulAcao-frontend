@@ -4,7 +4,8 @@ export const useStyles = makeStyles(() => ({
   container: {
     display: "flex",
     flexDirection: "row",
-    backgroundColor: "#000000",
+    backgroundColor: "#363636",
+    border: 1,
     width: "100vw",
     height: 60,
     margin: -8,

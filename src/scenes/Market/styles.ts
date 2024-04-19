@@ -12,7 +12,9 @@ export const useStyles = makeStyles(() => ({
     alignItems: "center",
   },
   title: {
+    marginRight: 740,
     color: "white",
     fontSize: 40,
+    fontWeight: "bolder"
   },
 }));

@@ -7,17 +7,17 @@ export const useStyles = makeStyles(() => ({
     alignItems: "center",
     justifyContent: "center",
     marginTop: 50,
-    backgroundColor: "#000000",
-    width: 350,
-    height: 350,
+    backgroundColor: "black",
+    width: 700,
+    height: 400,
   },
   carousel: {
-    marginLeft: 10,
-    width: 210,
-    height: 290,
+    width: 350,
+    height: 400,
   },
   title: {
     color: "white",
     fontSize: 22,
+    fontWeight: "bolder"
   },
 }));
