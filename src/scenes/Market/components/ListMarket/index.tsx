@@ -32,11 +32,19 @@ const ListMarket = ({ item }: any) => {
           sx={{ color: "white", marginTop: 2, height: 20, width: 60 }}
           primary={`${item.value}`}
         />
+        {item.variation > 0 ? (
         <ListItemText
           id={item.id}
           sx={{ color:`${color}`, marginTop: 2, height: 20, width: 60 }}
           primary={`+${item.variation}`}
         />
+        ) : (
+          <ListItemText
+          id={item.id}
+          sx={{ color:`${color}`, marginTop: 2, height: 20, width: 60 }}
+          primary={`${item.variation}`}
+        />
+        )}
         <ListItemText
           id={item.id}
           sx={{ color: "white", marginTop: 2, height: 20, width: 60 }}
