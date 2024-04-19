@@ -1,4 +1,5 @@
 import {
+  Divider,
   IconButton,
   List,
   ListItem,
@@ -8,25 +9,33 @@ import {
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import { useStyles } from "./style";
 
-const CheckboxList = ({ item }: any) => {
+const ListMarket = ({ item }: any) => {
+  let color = "white";
+  
+  if(item.variation > 0 && item.variation != null){
+      color = "green"
+  } else if(item.variation < 0 && item.variation != null){
+      color = "red"
+  }
+
   const styles = useStyles();
   return (
-    <List className={styles.container}>
-      <ListItem key={item.id} role={undefined} dense>
+    <List className={styles.container} >
+      <ListItem key={item.id}>  
         <ListItemText
           id={item.id}
           sx={{ color: "white", marginTop: 2, height: 20, width: 60 }}
-          primary={`${item.nome}`}
+          primary={`${item.name}`}
         />
         <ListItemText
           id={item.id}
           sx={{ color: "white", marginTop: 2, height: 20, width: 60 }}
-          primary={`${item.preco}`}
+          primary={`${item.value}`}
         />
         <ListItemText
           id={item.id}
-          sx={{ color: "white", marginTop: 2, height: 20, width: 60 }}
-          primary={`${item.variancia}`}
+          sx={{ color:`${color}`, marginTop: 2, height: 20, width: 60 }}
+          primary={`+${item.variation}`}
         />
         <ListItemText
           id={item.id}
@@ -37,10 +46,10 @@ const CheckboxList = ({ item }: any) => {
           <IconButton
             onClick={() =>
               alert(
-                `Compra da ação ${item.nome} do valor de ${item.preco} efetuada com sucesso `
+                `Compra da ação ${item.name} do valor de ${item.value} efetuada com sucesso `
               )
             }
-            sx={{ color: "white", marginTop: 2 }}
+            sx={{ color: "green", marginTop: 2 }}
             edge="end"
             aria-label="comments"
           >
@@ -52,4 +61,4 @@ const CheckboxList = ({ item }: any) => {
   );
 };
 
-export default CheckboxList;
+export default ListMarket;

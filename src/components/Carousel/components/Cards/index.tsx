@@ -39,7 +39,7 @@ const Cards = ({ item }: any): JSX.Element => {
           </Typography>
         </CardContent>
         <CardActions>
-          <Button size="small" href="/Market">Ir ao mercado</Button>
+          <Button size="small" href="/Market" sx={{color: "gray", textDecoration:"underline"}}>Ir ao mercado</Button>
         </CardActions>
     </Card>
     ) : (
@@ -53,30 +53,9 @@ const Cards = ({ item }: any): JSX.Element => {
             </Typography>
           </CardContent>
           <CardActions>
-            <Button size="small" href={item.site}>Ir ao site</Button>
+            <Button size="small" sx={{color: "gray", textDecoration:"underline"}} href={item.site}>Ir ao site</Button>
           </CardActions>
       </Card>
-    //     <Card
-    //   variant="outlined"
-    //   sx={{
-    //     display: "flex",
-    //     alignItems: "center",
-    //     justifyContent: "center",
-    //     backgroundColor: "black",
-    //     borderColor: `${color}`,
-    //   }}
-    // >
-    //   <CardContent>
-    //     <CardActionArea>
-    //       <Typography variant="body1" color="white" sx={{ marginTop: 1 }}>
-    //         {item.name}
-    //       </Typography>
-    //       <Typography variant="h5" color="white" sx={{ marginTop: 2 }}>
-    //         {item.value}
-    //       </Typography>
-    //     </CardActionArea>
-    //   </CardContent>
-    // </Card>
     )
   );
 };

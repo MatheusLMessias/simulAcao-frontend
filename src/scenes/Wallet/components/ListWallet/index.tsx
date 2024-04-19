@@ -16,31 +16,31 @@ const ListWallet = ({ item }: any) => {
         <ListItemText
           id={item.id}
           sx={{ color: "white", marginTop: 2, height: 20, width: 60 }}
-          primary={`${item.nome}`}
+          primary={`${item.name}`}
         />
         <ListItemText
           id={item.id}
           sx={{ color: "white", marginTop: 2, height: 20, width: 60 }}
-          primary={`${item.preco}`}
+          primary={`${item.value}`}
         />
         <ListItemText
           id={item.id}
           sx={{ color: "white", marginTop: 2, height: 20, width: 60 }}
-          primary={`${item.quantidade}`}
+          primary={`${item.qtd}`}
         />
         <ListItemText
           id={item.id}
           sx={{ color: "white", marginTop: 2, height: 20, width: 60 }}
-          primary={`${item.valorTotal}`}
+          primary={`${item.amount}`}
         />
         <ListItemSecondaryAction>
           <IconButton
             onClick={() =>
               alert(
-                `Venda de ${item.quantidade} ações da ${item.nome} no valor total de ${item.valorTotal} efetuada com sucesso `
+                `Venda de ${item.qtd} ações da ${item.name} no valor total de ${item.amount} efetuada com sucesso `
               )
             }
-            sx={{ color: "white", marginTop: 1.1 }}
+            sx={{ color: "red", marginTop: 1.1 }}
             edge="end"
             aria-label="comments"
           >
